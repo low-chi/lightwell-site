@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lightwell Labs, LLC</title>
+    <meta
+      name="description"
+      content="Strategic clarity that unlocks momentum — now."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .font-playfair { font-family: "Playfair Display", serif; }
+      .font-montserrat { font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+
+      :focus-visible { outline: 2px solid rgba(0,0,0,0.95); outline-offset: 3px; }
+      html { scroll-behavior: smooth; }
+
+      /* Skip link */
+      .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
+      .skip-link:focus {
+        left: 16px; top: 16px; width:auto; height:auto;
+        padding: 10px 14px; background:#000; color:#fff;
+        border-radius: 9999px; z-index: 1000;
+      }
+
+      /* Subtle animation */
+      .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease-out, transform .7s ease-out; }
+      .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+  </head>
+
+  <body class="bg-[#F7F3EE] text-black font-montserrat">
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-black/10 bg-[#F7F3EE]/85 backdrop-blur">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
+        <a href="#top" class="flex items-center gap-2" aria-label="Lightwell Labs home">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white/75" aria-hidden="true">
+            ✦
+          </span>
+          <div class="leading-none">
+            <div class="font-playfair text-lg">Lightwell Labs</div>
+            <div class="text-[11px] tracking-[0.22em] text-black/70">STRATEGIC CLARITY</div>
+          </div>
+        </a>
+
+        <nav aria-label="Main navigation" class="hidden items-center gap-6 text-sm text-black/85 md:flex">
+          <a class="hover:text-black" href="#work">Work</a>
+          <a class="hover:text-black" href="#founders">For Founders</a>
+          <a class="hover:text-black" href="#companies">For Companies</a>
+          <a class="hover:text-black" href="#about">About</a>
+        </nav>
+
+        <a
+          href="#book"
+          class="inline-flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-semibold text-white hover:bg-black/90"
+        >
+          Request an Alignment Call <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" class="outline-none" tabindex="-1" aria-label="Main content">
+      <div id="top"></div>
+
+      <!-- Hero -->
+      <section class="relative overflow-hidden">
+        <div class="pointer-events-none absolute inset-0 opacity-[0.06]" aria-hidden="true">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_55%)]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(0,0,0,0.28)_0%,rgba(0,0,0,0)_55%)]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_80%,rgba(0,0,0,0.25)_0%,rgba(0,0,0,0)_60%)]"></div>
+        </div>
+
+        <div class="mx-auto max-w-5xl px-5 py-16 md:py-24">
+          <div class="grid items-start gap-12 md:grid-cols-12">
+            <div class="md:col-span-7 reveal">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center rounded-full border border-black/10 bg-white/70 px-3 py-1 text-xs font-medium tracking-wide text-black/85">
+                  Strategic Catalyst
+                </span>
+                <span class="inline-flex items-center rounded-full border border-black/10 bg-white/70 px-3 py-1 text-xs font-medium tracking-wide text-black/85">
+                  Product Architect
+                </span>
+                <span class="inline-flex items-center rounded-full border border-black/10 bg-white/70 px-3 py-1 text-xs font-medium tracking-wide text-black/85">
+                  Brand Activator
+                </span>
+              </div>
+
+              <h1 class="mt-6 font-playfair text-4xl leading-[1.05] tracking-tight md:text-6xl">
+                Strategic clarity that unlocks momentum — <span class="italic">now</span>.
+              </h1>
+
+              <p class="mt-6 max-w-xl text-base leading-relaxed text-black/85 md:text-lg">
+                Lightwell Labs helps founders, executives, and leadership teams identify the
+                <span class="font-semibold text-black">real problem</span>, clarify strategy, and build the structure that moves work forward.
+              </p>
+
+              <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="#book"
+                  class="inline-flex items-center justify-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white hover:bg-black/90"
+                >
+                  Request an Alignment Call <span aria-hidden="true">→</span>
+                </a>
+
+                <a
+                  href="#work"
+                  class="inline-flex items-center justify-center gap-2 rounded-full border border-black/15 bg-white/75 px-6 py-3 text-sm font-semibold text-black hover:bg-white"
+                >
+                  Explore How I Work <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <p class="mt-6 text-sm text-black/75">
+                Brought in when something important needs to move forward.
+              </p>
+            </div>
+
+            <div class="md:col-span-5 reveal">
+              <div class="rounded-3xl border border-black/10 bg-white/75 p-7 shadow-sm backdrop-blur">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-xs uppercase tracking-[0.2em] text-black/70">Often brought into</p>
+                    <p class="mt-2 font-playfair text-2xl">Pivotal Moments</p>
+                  </div>
+                  <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-black text-white" aria-hidden="true">⚡</span>
+                </div>
+
+                <ul class="mt-6 space-y-3 text-sm text-black/80">
+                  <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>An idea that needs sharper clarity</li>
+                  <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Too many strategic options and no clear path</li>
+                  <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Teams feeling misaligned on direction</li>
+                  <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Innovation efforts that need structure</li>
+                  <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>A product or brand that isn’t landing</li>
+                </ul>
+
+                <div class="mt-6 rounded-2xl border border-black/10 bg-[#F7F3EE] p-4">
+                  <p class="text-xs uppercase tracking-[0.2em] text-black/70">The outside lens</p>
+                  <p class="mt-2 text-sm text-black/85">
+                    Often the expertise already exists within the organization. The challenge is that when everyone is living inside the system every day,
+                    it can be difficult to clearly see certain patterns. Sometimes it takes a neutral outside perspective to identify misalignment, hidden constraints,
+                    or new opportunities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section id="work" class="scroll-mt-28 py-16 md:py-28">
+        <div class="mx-auto w-full max-w-5xl px-5">
+          <div class="max-w-3xl reveal">
+            <div class="mb-3 flex items-center gap-2">
+              <div class="h-1 w-1 rounded-full bg-black/60" aria-hidden="true"></div>
+              <p class="text-xs uppercase tracking-[0.2em] text-black/70">How I work</p>
+            </div>
+            <h2 class="font-playfair text-3xl leading-tight md:text-4xl">
+              Identify the real problem. Clarify the strategy. Build what unlocks momentum.
+            </h2>
+          </div>
+
+          <div class="mt-8 grid gap-5 md:grid-cols-3">
+            <div class="rounded-3xl border border-black/10 bg-white/75 p-7 shadow-sm backdrop-blur reveal">
+              <div class="flex items-center gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-black text-white" aria-hidden="true">◎</span>
+                <h3 class="font-playfair text-xl">Diagnose the constraint</h3>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-black/80">We separate symptoms from root cause — and make the real bottleneck visible.</p>
+            </div>
+
+            <div class="rounded-3xl border border-black/10 bg-white/75 p-7 shadow-sm backdrop-blur reveal">
+              <div class="flex items-center gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-black text-white" aria-hidden="true">⌁</span>
+                <h3 class="font-playfair text-xl">Clarify the opportunity</h3>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-black/80">We refine positioning, priorities, and direction so decisions become simpler.</p>
+            </div>
+
+            <div class="rounded-3xl border border-black/10 bg-white/75 p-7 shadow-sm backdrop-blur reveal">
+              <div class="flex items-center gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-black text-white" aria-hidden="true">▦</span>
+                <h3 class="font-playfair text-xl">Design the structure</h3>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-black/80">We create a path teams can execute — clear, focused, and built for momentum.</p>
+            </div>
+          </div>
+
+          <div class="mt-10 rounded-3xl border border-black/10 bg-white/70 p-7 backdrop-blur reveal">
+            <p class="font-playfair text-2xl">Clarity compounds.</p>
+            <p class="mt-2 max-w-3xl text-sm leading-relaxed text-black/80">
+              When noise disappears, priorities sharpen. When priorities sharpen, momentum returns.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Founders -->
+      <section id="founders" class="scroll-mt-28 py-16 md:py-28">
+        <div class="mx-auto w-full max-w-5xl px-5">
+          <div class="max-w-3xl reveal">
+            <div class="mb-3 flex items-center gap-2">
+              <div class="h-1 w-1 rounded-full bg-black/60" aria-hidden="true"></div>
+              <p class="text-xs uppercase tracking-[0.2em] text-black/70">For founders</p>
+            </div>
+            <h2 class="font-playfair text-3xl leading-tight md:text-4xl">Turn your idea into traction</h2>
+          </div>
+
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            <div class="rounded-3xl border border-black/10 bg-white/75 p-8 shadow-sm backdrop-blur reveal">
+              <h3 class="font-playfair text-2xl">Clarity Intensive</h3>
+              <p class="mt-3 text-sm leading-relaxed text-black/80">
+                A focused strategy session designed to solve the biggest bottleneck in your business.
+              </p>
+              <ul class="mt-5 space-y-2 text-sm text-black/80">
+                <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Positioning & audience clarity</li>
+                <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Offer structure</li>
+                <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Messaging & brand voice</li>
+                <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Next steps you can execute</li>
+              </ul>
+              <a href="#book" class="mt-6 inline-flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white hover:bg-black/90">
+                Book the Intensive <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="rounded-3xl border border-black/10 bg-white/75 p-8 shadow-sm backdrop-blur reveal">
+              <h3 class="font-playfair text-2xl">Clarity to Launch Sprint</h3>
+              <p class="mt-3 text-sm leading-relaxed text-black/80">
+                A structured sprint to transform an idea into a launch-ready brand.
+              </p>
+              <ul class="mt-5 space-y-2 text-sm text-black/80">
+                <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Brand positioning</li>
+                <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Messaging & voice</li>
+                <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Foundational website copy</li>
+                <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Launch roadmap</li>
+              </ul>
+              <a href="#book" class="mt-6 inline-flex items-center gap-2 rounded-full border border-black/15 bg-white px-5 py-2.5 text-sm font-semibold text-black hover:bg-white">
+                Explore the Sprint <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Companies -->
+      <section id="companies" class="scroll-mt-28 py-16 md:py-28">
+        <div class="mx-auto w-full max-w-5xl px-5">
+          <div class="max-w-3xl reveal">
+            <div class="mb-3 flex items-center gap-2">
+              <div class="h-1 w-1 rounded-full bg-black/60" aria-hidden="true"></div>
+              <p class="text-xs uppercase tracking-[0.2em] text-black/70">For companies</p>
+            </div>
+            <h2 class="font-playfair text-3xl leading-tight md:text-4xl">Strategic clarity for growing organizations</h2>
+          </div>
+
+          <div class="mt-8 grid gap-6 md:grid-cols-12">
+            <div class="md:col-span-7 rounded-3xl border border-black/10 bg-white/75 p-8 shadow-sm backdrop-blur reveal">
+              <h3 class="font-playfair text-2xl">Strategic Catalyst Engagement</h3>
+              <p class="mt-3 text-sm leading-relaxed text-black/80">
+                A focused engagement designed to unlock progress around a key initiative.
+              </p>
+              <p class="mt-4 text-sm leading-relaxed text-black/80">
+                Leadership teams often have the expertise to solve the issue. The difficulty is living inside the system — certain patterns become hard to see.
+              </p>
+
+              <div class="mt-5 rounded-2xl border border-black/10 bg-[#F7F3EE] p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-black/70">Common focus areas</p>
+                <div class="mt-3 grid gap-2 text-sm text-black/80 sm:grid-cols-2">
+                  <div class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Product / platform strategy</div>
+                  <div class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Brand positioning</div>
+                  <div class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Innovation initiatives</div>
+                  <div class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>New venture design</div>
+                  <div class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Ecosystem & portfolio strategy</div>
+                  <div class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Strategic alignment</div>
+                </div>
+              </div>
+
+              <a href="#book" class="mt-6 inline-flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white hover:bg-black/90">
+                Start a Conversation <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="md:col-span-5 rounded-3xl border border-black/10 bg-white/75 p-8 shadow-sm backdrop-blur reveal">
+              <h3 class="font-playfair text-2xl">Innovation & systems thinking</h3>
+              <p class="mt-3 text-sm leading-relaxed text-black/80">Many organizations pursue growth through isolated initiatives.</p>
+              <p class="mt-3 text-sm leading-relaxed text-black/80">
+                This work focuses on designing coherent systems instead of disconnected efforts — product ecosystems, platform strategy, brand architecture, and innovation pipelines.
+              </p>
+              <a href="#book" class="mt-6 inline-flex items-center gap-2 rounded-full border border-black/15 bg-white px-5 py-2.5 text-sm font-semibold text-black hover:bg-white">
+                Discuss Your Initiative <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="scroll-mt-28 py-16 md:py-28">
+        <div class="mx-auto w-full max-w-5xl px-5">
+          <div class="max-w-3xl reveal">
+            <div class="mb-3 flex items-center gap-2">
+              <div class="h-1 w-1 rounded-full bg-black/60" aria-hidden="true"></div>
+              <p class="text-xs uppercase tracking-[0.2em] text-black/70">About</p>
+            </div>
+            <h2 class="font-playfair text-3xl leading-tight md:text-4xl">Lightwell Labs</h2>
+          </div>
+
+          <div class="mt-8 grid gap-6 md:grid-cols-12">
+            <div class="md:col-span-7 rounded-3xl border border-black/10 bg-white/75 p-8 shadow-sm backdrop-blur reveal">
+              <p class="text-sm leading-relaxed text-black/85">Lightwell Labs exists to bring clarity to complex ideas.</p>
+              <p class="mt-4 text-sm leading-relaxed text-black/85">
+                The name reflects the belief that when the right light is applied to a challenge, the path forward becomes illuminated.
+              </p>
+              <p class="mt-4 text-sm leading-relaxed text-black/85">
+                The work focuses on helping founders and organizations transform ideas into clear strategy and effective structure.
+              </p>
+            </div>
+
+            <div class="md:col-span-5 rounded-3xl border border-black/10 bg-white/75 p-8 shadow-sm backdrop-blur reveal">
+              <p class="font-playfair text-2xl">Chelsea Lowry</p>
+              <p class="mt-2 text-sm text-black/80">Strategic Catalyst</p>
+              <p class="text-sm text-black/80">Product Architect & Brand Activator</p>
+              <p class="mt-5 text-sm leading-relaxed text-black/85">
+                Chelsea works with founders, executives, and leadership teams to transform complex ideas into clear strategy, compelling brands, and actionable structure.
+              </p>
+              <p class="mt-4 text-sm leading-relaxed text-black/85">
+                Her approach blends pattern recognition, strategic thinking, and decisive execution — because when the real problem becomes visible, progress follows naturally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking -->
+      <section id="book" class="scroll-mt-28 py-16 md:py-28">
+        <div class="mx-auto w-full max-w-5xl px-5">
+          <div class="max-w-3xl reveal">
+            <div class="mb-3 flex items-center gap-2">
+              <div class="h-1 w-1 rounded-full bg-black/60" aria-hidden="true"></div>
+              <p class="text-xs uppercase tracking-[0.2em] text-black/70">Start here</p>
+            </div>
+            <h2 class="font-playfair text-3xl leading-tight md:text-4xl">Request an Alignment Call</h2>
+          </div>
+
+          <div class="mt-8 rounded-3xl border border-black/10 bg-white/75 p-8 shadow-sm backdrop-blur reveal">
+            <div class="grid gap-8 md:grid-cols-12">
+              <div class="md:col-span-7">
+                <p class="text-sm leading-relaxed text-black/85">
+                  If you're navigating a complex idea, a growth decision, or a new venture, the first step is a short alignment call.
+                  We'll quickly determine whether there is a meaningful opportunity to work together and what the right next step would be.
+                </p>
+
+                <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href="https://calendly.com/cnlowry/30min"
+                    class="inline-flex items-center justify-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white hover:bg-black/90"
+                    aria-label="Book via Calendly"
+                  >
+                    Book via Calendly <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="md:col-span-5">
+                <div class="rounded-2xl border border-black/10 bg-[#F7F3EE] p-5">
+                  <p class="text-xs uppercase tracking-[0.2em] text-black/70">What we cover on the alignment call</p>
+                  <ul class="mt-3 space-y-2 text-sm text-black/80">
+                    <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>A brief overview of your situation and the context around the project</li>
+                    <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>The outcome you are trying to achieve</li>
+                    <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-black/50" aria-hidden="true"></span>Whether and how a deeper engagement could best support the work</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border-t border-black/10 bg-[#F7F3EE]">
+        <div class="mx-auto flex max-w-5xl flex-col gap-4 px-5 py-10 md:flex-row md:items-center md:justify-between">
+          <div>
+            <div class="font-playfair text-xl">Lightwell Labs</div>
+            <div class="mt-1 text-xs uppercase tracking-[0.2em] text-black/70">
+              Strategic clarity that unlocks momentum
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 text-sm text-black/80" aria-label="Footer navigation">
+            <a class="hover:text-black underline" href="./privacy.html">Privacy Policy</a>
+            <a class="hover:text-black underline" href="./terms.html">Terms of Use</a>
+          </div>
+
+          <div class="text-xs text-black/70">© <span id="year"></span> Lightwell Labs, LLC. All rights reserved.</div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Set year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Reveal on scroll
+      const els = Array.from(document.querySelectorAll(".reveal"));
+      const io = new IntersectionObserver((entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) e.target.classList.add("is-visible");
+        }
+      }, { threshold: 0.15 });
+      els.forEach(el => io.observe(el));
+    </script>
+  </body>
+</html>
